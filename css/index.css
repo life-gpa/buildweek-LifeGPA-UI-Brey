@@ -146,7 +146,7 @@ h1 {
   font-size: 4rem;
 }
 #full-page {
-  background-color: #555555;
+  background-image: linear-gradient(#a0001e, #464646, white);
   width: 100%;
   margin: 0 auto;
   font-size: 1.6rem;
@@ -168,7 +168,6 @@ button:hover {
 }
 .page-title {
   padding: 20px;
-  background-color: #464646;
   border: 1px solid black;
   width: 100%;
   flex-direction: column;
@@ -184,7 +183,7 @@ button:hover {
 }
 .page-title nav a {
   text-decoration: none;
-  color: #a0001e;
+  color: #464646;
   margin: 0px 20px;
 }
 .page-title nav a:hover {
@@ -233,6 +232,9 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+.mid-content {
+  padding: 20px 0px 30px 0px;
+}
 .mid-content .container-title h2 {
   font-size: 2rem;
   padding: 20px;
@@ -240,4 +242,35 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.mid-content .container {
+  display: flex;
+  justify-content: space-around;
+}
+.mid-content .container .what-it-does,
+.mid-content .container .how-it-works {
+  width: 40%;
+}
+.mid-content .container .what-it-does .what-title,
+.mid-content .container .how-it-works .what-title,
+.mid-content .container .what-it-does .works-title,
+.mid-content .container .how-it-works .works-title {
+  font-size: 1.8rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.bottom-content .features-title {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding-top: 20px;
+}
+.bottom-content .features {
+  width: 35%;
+  display: flex;
 }
