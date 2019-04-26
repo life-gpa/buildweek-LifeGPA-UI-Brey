@@ -1,15 +1,21 @@
 .center {
+    flex-direction: column;
     display: flex;
-    flex-flow: column;
     justify-content: center;
     align-items: center;
 }
 
 .button() {
-    background-color: #FFEB38;
+    background-color: #a0001e;
+    color: black;
     font-size: 2rem;
-    width: 250%;
+    width: 25%;
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid black; 
+    border: 1px solid gray;
+    &:hover {
+        background-color: gray;
+        color: black;
+        border: 1px solid #a0001e;
+    }
 }
