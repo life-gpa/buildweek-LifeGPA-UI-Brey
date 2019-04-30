@@ -5,7 +5,6 @@ class IconLink {
         this.itemElement = document.querySelector(`.icons-item[data-tab='${this.data}']`);
         this.iconItem = new IconItem(this.itemElement);
         this.element.addEventListener('click', () => this.select());
-        console.log('click');
     }
 
     select() {
