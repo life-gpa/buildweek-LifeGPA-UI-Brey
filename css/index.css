@@ -297,7 +297,7 @@ button:hover {
 }
 @media (max-width: 500px) {
   .mid-content .video .video-p {
-    padding-left: 10px;
+    display: none;
   }
 }
 .mid-content .container-title h2 {
