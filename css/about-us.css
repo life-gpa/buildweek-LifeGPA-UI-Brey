@@ -191,17 +191,13 @@ button:hover {
     justify-content: center;
     align-items: center;
     font-size: 1.8rem;
+    padding: 30px 0px;
   }
 }
 .page-title nav a {
   text-decoration: none;
   color: #464646;
   margin: 0px 20px;
-}
-@media (max-width: 500px) {
-  .page-title nav a {
-    padding: 15px 0px;
-  }
 }
 .page-title nav a:hover {
   background-color: #464646;
