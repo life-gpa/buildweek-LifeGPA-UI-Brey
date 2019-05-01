@@ -188,15 +188,30 @@ button:hover {
   border: 2px solid gray;
   border-radius: 3px;
 }
+@media (max-width: 500px) {
+  .page-title nav {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+}
 .page-title nav a {
   text-decoration: none;
   color: #464646;
   margin: 0px 20px;
 }
+@media (max-width: 500px) {
+  .page-title nav a {
+    padding: 15px 0px;
+  }
+}
 .page-title nav a:hover {
   background-color: #464646;
   color: white;
-  padding: 5px;
+  padding: 3px;
   border-bottom: 1px solid white;
   border-radius: 3px;
   font-size: 1.6rem;
@@ -217,6 +232,11 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .page-title h1 {
+    width: 90%;
+  }
 }
 .footer {
   flex-direction: column;

@@ -11,14 +11,24 @@
         background-color: #a0001e;
         border: 2px solid gray;
         border-radius: 3px;
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            .center;
+            font-size: 1.8rem;
+        }
         a {
             text-decoration: none;
             color: #464646;
             margin: 0px 20px;
+            @media @phone {
+                padding: 15px 0px;
+            }
             &:hover {
                 background-color: #464646;
                 color: white;
-                padding: 5px;
+                padding: 3px;
                 border-bottom: 1px solid white;
                 border-radius: 3px;
                 font-size: 1.6rem;
@@ -39,5 +49,8 @@
         background-color: #a0001e;
         border-radius: 5px;
         .center;
+        @media @phone {
+            width: 90%;
+        }
     }    
 }
