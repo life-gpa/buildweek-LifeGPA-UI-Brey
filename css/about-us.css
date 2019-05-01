@@ -183,10 +183,25 @@ button:hover {
   border: 2px solid gray;
   border-radius: 3px;
 }
+@media (max-width: 500px) {
+  .page-title nav {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+}
 .page-title nav a {
   text-decoration: none;
   color: #464646;
   margin: 0px 20px;
+}
+@media (max-width: 500px) {
+  .page-title nav a {
+    padding: 15px 0px;
+  }
 }
 .page-title nav a:hover {
   background-color: #464646;
@@ -212,6 +227,11 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .page-title h1 {
+    width: 90%;
+  }
 }
 .footer {
   flex-direction: column;
@@ -264,6 +284,19 @@ button:hover {
   align-items: center;
   padding-bottom: 40px;
   width: 40%;
+}
+@media (max-width: 500px) {
+  .individuals .alando,
+  .individuals .kaiser,
+  .individuals .kwesi,
+  .individuals .ruben,
+  .individuals .jamelle,
+  .individuals .brey {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+  }
 }
 .individuals .alando h3,
 .individuals .kaiser h3,
