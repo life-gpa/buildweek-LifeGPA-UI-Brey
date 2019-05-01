@@ -10,6 +10,9 @@
     .about {
         .center;
         font-size: 1.6rem;
+        @media @phone {
+            font-size: 1.8rem;
+        }
 
         .question, .answer, .inspire {
         width: 70%;
@@ -18,8 +21,7 @@
         flex-wrap: wrap;
         .center;
         }
-    }
-    
+    }    
 }
 
 .mid-content {
@@ -27,12 +29,23 @@
 
     .video {
         .center;
+        @media @phone {
+            video {
+                display: none;
+            }
+        }
+        
         .video-p {
             padding-top: 40px;
             color: #a0001e;
             font-size: 3rem;
-        }
+            @media @phone {
+                padding-left: 10px;
+            }
+        }   
     }
+
+
 
     .container-title{
         h2 {
@@ -41,21 +54,34 @@
             .center;
             color: #a0001e;
         }
-    }
-    .container {
-        display: flex;
-        justify-content: space-around;
-
-        .what-it-does, .how-it-works {
-            width: 40%;
-
-            .what-title, .works-title {
-                font-size: 2.4rem;
+    
+        .container {
+            display: flex;
+            justify-content: space-around;
+            @media @phone {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                flex-flow: column;
                 .center;
-                padding-bottom: 10px;
             }
-        }   
-    }
+
+            .what-it-does, .how-it-works {
+                width: 40%;
+                @media @phone {
+                    padding-bottom: 20px;
+                    width: 90%;
+                }
+
+                .what-title, .works-title {
+                    font-size: 2.4rem;
+                    .center;
+                    padding-bottom: 10px;
+                }
+            }   
+        }
+    }    
 }
 
 .bottom-content {
@@ -72,4 +98,7 @@
 .buttons {
     .center;
     padding: 30px;
+    @media @phone {
+        width: 100%;
+    }
 }

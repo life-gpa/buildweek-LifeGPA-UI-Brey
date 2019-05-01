@@ -150,6 +150,11 @@ body {
   font-weight: bold;
   line-height: 1.6;
 }
+@media (max-width: 500px) {
+  #full-page {
+    width: 100%;
+  }
+}
 button {
   background-color: #a0001e;
   color: #464646;
@@ -239,6 +244,11 @@ button:hover {
   align-items: center;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .top-content .about {
+    font-size: 1.8rem;
+  }
+}
 .top-content .about .question,
 .top-content .about .answer,
 .top-content .about .inspire {
@@ -259,10 +269,20 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .mid-content .video video {
+    display: none;
+  }
+}
 .mid-content .video .video-p {
   padding-top: 40px;
   color: #a0001e;
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .mid-content .video .video-p {
+    padding-left: 10px;
+  }
 }
 .mid-content .container-title h2 {
   font-size: 3rem;
@@ -273,18 +293,37 @@ button:hover {
   align-items: center;
   color: #a0001e;
 }
-.mid-content .container {
+.mid-content .container-title .container {
   display: flex;
   justify-content: space-around;
 }
-.mid-content .container .what-it-does,
-.mid-content .container .how-it-works {
+@media (max-width: 500px) {
+  .mid-content .container-title .container {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-flow: column;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.mid-content .container-title .container .what-it-does,
+.mid-content .container-title .container .how-it-works {
   width: 40%;
 }
-.mid-content .container .what-it-does .what-title,
-.mid-content .container .how-it-works .what-title,
-.mid-content .container .what-it-does .works-title,
-.mid-content .container .how-it-works .works-title {
+@media (max-width: 500px) {
+  .mid-content .container-title .container .what-it-does,
+  .mid-content .container-title .container .how-it-works {
+    padding-bottom: 20px;
+    width: 90%;
+  }
+}
+.mid-content .container-title .container .what-it-does .what-title,
+.mid-content .container-title .container .how-it-works .what-title,
+.mid-content .container-title .container .what-it-does .works-title,
+.mid-content .container-title .container .how-it-works .works-title {
   font-size: 2.4rem;
   flex-direction: column;
   display: flex;
@@ -308,6 +347,11 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 30px;
+}
+@media (max-width: 500px) {
+  .buttons {
+    width: 100%;
+  }
 }
 .icons {
   display: flex;
