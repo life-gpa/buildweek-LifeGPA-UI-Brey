@@ -213,6 +213,15 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+.footer {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #464646;
+  padding: 10px;
+  border: 2px solid #a0001e;
+}
 .top-content #welcome {
   flex-direction: column;
   display: flex;
@@ -299,15 +308,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 30px;
-}
-.footer {
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #464646;
-  padding: 10px;
-  border: 2px solid #a0001e;
 }
 .icons {
   display: flex;
