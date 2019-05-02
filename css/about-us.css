@@ -322,3 +322,12 @@ button:hover {
   font-size: 1.6rem;
   padding: 10px;
 }
+.individuals .alando .links a,
+.individuals .kaiser .links a,
+.individuals .kwesi .links a,
+.individuals .ruben .links a,
+.individuals .jamelle .links a,
+.individuals .brey .links a {
+  text-decoration: none;
+  color: #464646;
+}
