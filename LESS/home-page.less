@@ -1,0 +1,104 @@
+.top-content {
+
+    #welcome {
+        .center;
+        padding: 20px;
+        font-size: 3.3rem;
+        font-weight: bold;
+        color: #a0001e;
+    }
+    .about {
+        .center;
+        font-size: 1.6rem;
+        @media @phone {
+            font-size: 1.8rem;
+        }
+
+        .question, .answer, .inspire {
+        width: 70%;
+        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        .center;
+        }
+    }    
+}
+
+.mid-content {
+    padding: 20px 0px 30px 0px;
+
+    .video {
+        .center;
+        @media @phone {
+            video {
+                display: none;
+            }
+        }
+        
+        .video-p {
+            padding-top: 40px;
+            color: #a0001e;
+            font-size: 3rem;
+            @media @phone {
+                display: none;
+            }
+        }   
+    }
+
+
+
+    .container-title{
+        h2 {
+            font-size: 3rem;
+            padding: 20px;
+            .center;
+            color: #a0001e;
+        }
+    
+        .container {
+            display: flex;
+            justify-content: space-around;
+            @media @phone {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                flex-flow: column;
+                .center;
+            }
+
+            .what-it-does, .how-it-works {
+                width: 40%;
+                @media @phone {
+                    padding-bottom: 20px;
+                    width: 90%;
+                }
+
+                .what-title, .works-title {
+                    font-size: 2.4rem;
+                    .center;
+                    padding-bottom: 10px;
+                }
+            }   
+        }
+    }    
+}
+
+.bottom-content {
+    
+    .features-title {
+        .center;
+        font-size: 2.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #a0001e;
+    }
+}
+
+.buttons {
+    .center;
+    padding: 30px;
+    @media @phone {
+        width: 100%;
+    }
+}
